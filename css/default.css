@@ -1,3 +1,7 @@
 #ingredient{
-border:2px solid lightcoral;
+ border:2px solid #BDDEF9;
+}
+
+th, td{
+  border:1px solid #BDDEF9;
 }
