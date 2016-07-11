@@ -5,15 +5,23 @@ var separate_time = function(time){
   var days = time.getDate();
   var month = time.getMonth();
   var year = time.getFullYear();
-  return [sec,min,hours,days,month,year];
+  return [sec, min, hours, year, days, month];
 }
 
+var update = function(){
 var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent = 
+ counter[5] + ' / ' +
  counter[4] + ' / ' +
- counter[3] + ' / ' +
- counter[5] + '   ' +
+ counter[3] + '     ' +
  counter[2] + ' : ' +
  counter[1] + ' : ' +
  counter[0];
+ refresh();
+}
+
+var refresh = function(){
+  setTimeout(update,1000);
+}
+update();
