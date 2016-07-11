@@ -8,11 +8,24 @@ var separate_time = function(time){
   return [sec, min, hours, year, days, month];
 }
 
+months = ["January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"];
+
 var update = function(){
 var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent = 
- counter[5] + ' / ' +
+ months[counter[5]] + ' / ' +
  counter[4] + ' / ' +
  counter[3] + '     ' +
  counter[2] + ' : ' +
