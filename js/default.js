@@ -8,18 +8,18 @@ var separate_time = function(time){
   return [sec, min, hours, year, days, month];
 }
 
-months = ["January",
-    "February",
-    "March",
-    "April",
+months = ["Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"];
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"];
 
 var update = function(){
 var now = new Date();
